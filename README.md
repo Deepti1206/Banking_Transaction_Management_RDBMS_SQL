@@ -51,4 +51,11 @@ We will frame business questions for our client XYZ Fintech. Some of the interes
 7. Are you currently using any specific database management system, or do you have preferences for technologies and tools?
 8. What specific security and compliance standards do you need to adhere to?
 
+## Business Rules
 
+- Each Transaction must belong to only one Vendor. Each Vendor may have many transactions. A transaction is unique.
+- Each Credit account can have multiple transactions. Each transaction must belong to only one credit account. 
+- Each Customer must have at least one credit account. Each Credit Account must belong to one customer.
+- Each Credit Account may have one or more card types. Each card type belongs to one and only credit account.
+- All card types share common attributes (card type, customer ID, credit limit, and annual fee) but some card type have unique attributes (for instance, minimum pay for Regular, annual cashback for Premium and travel details for Travel card)
+- Each agent can make a call to many customers. Each customer can be contacted by many agents.
