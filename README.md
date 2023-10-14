@@ -26,7 +26,7 @@ You are a Database Administrator. They hired you to seek help on how they can ma
 - Financial transactions are the lifeblood of fintech companies. Whether it's processing payments, executing trades, or managing loans, these actions need to be executed with the utmost precision. RDBMS are the guardians of these transactions, armed with the power of ACID compliance (Atomicity, Consistency, Isolation, Durability). They ensure that a financial transaction, once initiated, is completed successfully and reliably, and that the data remains consistent throughout the process.
 - In a world where every dollar counts, RDBMS provides the rock-solid foundation upon which fintech companies build their operations, making sure your financial actions are executed without a glitch.
 
-<img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/rdbms_image.jpg" width="600" height="200" align="center">
+<img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/rdbms_image.jpg" width="600" height="400" align="center">
 
 ## Background
 
