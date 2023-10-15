@@ -14,14 +14,15 @@
 
 ## Project Objective
 
-The objective of this project is to provide an overview on relational database management and how SQL is used to answer simple questions in the real world.
+The aim of this project is to provide an understanding of relational database management and demonstrate the practical application of SQL in addressing real-world queries.
 
 ## Problem Statement
 
-In this project we will assume an imaginary financial services company, XYZ Fintech. 
+Within the scope of this project, we will adopt a hypothetical financial services entity, known as "XYZ Fintech." 
 
 “XYZ Fintech” is a financial services company offering wide range of financial products like Credit cards, personal loans, auto loans, savings account and checking account all over the USA. One of its major business comes from credit card. The company wants to develop a database to track and monitor the credit card transactions.
-You are a Database Administrator. They hired you to seek help on how they can manage their huge transaction database.
+
+In this capacity, you serve as the designated Database Administrator. "XYZ Fintech" has engaged your expertise to navigate the complexities of managing their extensive transaction database.
 
 ## Business Understanding
 
@@ -50,14 +51,11 @@ As a Database Administrator, your role is develop an efficient and scalable data
 
 We will frame business questions for our client XYZ Fintech. Some of the interesting questions, we can ask them are as follows:
 
-1. What is the goal of the company in terms of database usage?
-2. What services do you offer?
-3. Who are the stakeholders that you deal with? Can you ellaborate on process on how does the trasactions work with each of these?
-4. How much transaction data does your company currently handle, and what is the expected growth rate?
-5. What is the peak transaction throughput that your database needs to handle, and what are the performance requirements during high traffic periods?
-6. What types of queries and reporting functions do you need to perform on the transaction data?
-7. Are you currently using any specific database management system, or do you have preferences for technologies and tools?
-8. What specific security and compliance standards do you need to adhere to?
+1. What is the goal of the company in terms of database usage? What services do you offer?
+2. Who are the stakeholders that you deal with? Can you elaborate on process on how does the trasactions work with each of these?
+3. How much transaction data does your company currently handle, and what is the expected growth rate?
+4. What is the peak transaction throughput that your database needs to handle, and what are the performance requirements during high traffic periods?
+5. What types of queries and reporting functions do you need to perform on the transaction data?
 
 ## Business Rules
 
@@ -82,9 +80,7 @@ After defining the business rules, you may notice that there exists different re
 
 ## Entity Relationship Diagram
 
-The business rules defined above give us an overall process on how company works and develops an intuition how data might be recorded. We were able to develop some intuitions on how there are different types of relationships between various entities. For instance, Each credit account has multiple transactions. In other words, we can also say that, there is one entity 'Credit Account' that has more than single relationship with another entity maybe 'Transaction'. Therefore, it is safe to say that the Credit Account may have one-to-many relationship with Transaction. These types of relationships are used to develop an ER diagram. We will develop ER diagram and I will try to explain the different relationship through the example of an ER diagram. Please note, the verbs (may, must), the pronouns (Each, Every) used have some meaning to be considered, I would suggest to read a good article or book on how these relationships are defined in ER diagram.
-
-Based on the above business rules, think of a table and how each data might be recorded in a table. For instance, after reading a business rule, I can think of a **Customer** table and it can have attributes such as Customer name, customer card details, customer's demographics. Also, think of how can we identify an indiividual customer. Therefore, we need a unique ID for customer, lets call it as may be *Customer ID*. Some of the examples of the tables I can think are given in this figure.
+The provided business rules offer insights into the company's operations and provide an understanding of data recording processes. Notably, they reveal various relationships between entities, like the multiple transactions associated with each credit account. This implies a one-to-many relationship between "Credit Account" and "Transaction," forming the basis for an Entity-Relationship (ER) diagram. These relationships are nuanced, with the use of verbs and pronouns carrying specific meanings. To illustrate these concepts, we'll create an ER diagram. For example, considering the rules, we envision a "Customer" table with attributes like customer name, card details, and demographics, necessitating a unique "Customer ID." This approach helps us conceptualize how data might be structured in tables to represent the business processes effectively. The Entities and its attributes is illustrated below:
 
 <p align="center">
   <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/tables_attributes.png" width="600" height="200" />
@@ -104,30 +100,30 @@ You can find the details of these relationships in the Reference section. Since 
 </p>
 
 
-Now, that you know on how you can built a relationship between tables, we can bulit much more tables and try to relate them with each other. However, you cannot go on building never ending tables and relationships. You also need to think about the storage space and structural issues for maintainance. Therefore, there is a technique used to organize data and data tables while designing a database. Usually, the technique used for DBMS is **Normalization** that helps in keeping data consistent and solves data integrity issues. There are different norm forms like 1NF, 2NF, 3NF and so on. You can find the detail in the Reference section. 
+Now, that you know on how you can built a relationship between tables, we can bulit much more tables and try to relate them with each other. An endless web of tables and relationships can lead to structural complexities and storage issues. To address these concerns, the practice of **Normalization** is widely employed in Database Management Systems (DBMS). There are different norm forms like 1NF, 2NF, 3NF and so on. You can find the detail in the Reference section. 
 
-In additon to this, the relational tables possess a properties that needs to be followed while buildiing an ER diagram. **Keys** are one of the most vital elements in a relational database to maintain the relationship between the tables and it also helps in uniquely identifying the data from a table. There are different types of keys such as Primary keys, Foreign keys, etc. You will find details in the reference section.
+Furthermore, the relational tables within a database adhere to specific properties to facilitate the creation of an Entity-Relationship (ER) diagram. Among these, **Keys** hold paramount importance. They not only establish vital relationships between tables but also serve as unique identifiers for data within a table. Some importamt keys are Primary Keys and Foreign Keys.
 
 Following these techniques, properties and collecting the knowledge of the entities-relationship from business rules, I have developed an Enahnced ER diagram (EER) using Lucid Chart. The details for each symbols and boxes representations are given in the References section.
 
+**Enhanced Entity Relationship Diagram of Bank Database:**
 <p align="center">
   <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/EERD.png" width="800" height="400" />
 </p>
 
 The above EER diagram is the pictorial representation of the Business Rules. Some of the examples in the EER diagram can be explained as follows:
 
-1. M: N relationship.
-In the above EER diagram, for the business rule, “Each agent can make a call to many customers. Each customer can be contacted by many agents”. The relationship between Agent and the Customer is M: N as each agent “may” call many customers and each customer can be contacted by many agents. The relationship can be sub-divided into two one-to-many relationship by building a bridge between the Agent and the Customer as “Agent_customer” composite entity. The relationship on the “many” side is optional since the agent may make a call to customer and customer “may” be contacted by agent. According to business rules the cardinality on the many side is (0, N)
+**1. M: N relationship.**
+In the above EER diagram, for the business rule, “Each agent can make a call to many customers. Each customer can be contacted by many agents”. The relationship between Agent and the Customer is M: N. The relationship can be sub-divided into two one-to-many relationship by building a bridge between the Agent and the Customer as “Agent_customer” composite entity. According to business rules the cardinality on the many side is (0, N)
 
-
-2. Enhanced ER relationship
-For the business rule, “All card types share common attributes (card type, customer ID, credit limit, and annual fee) but some card type has unique attributes (for instance, minimum pay for Regular, annual cashback for Premium and travel details for Travel card)” can be implemented using the EER diagram as it follows the concept of “Generalization”. The relationship between Credit Account and the Card Type is 1: M as each credit account “may” many credit account can have one or more card types. The relationship on the “many” sides is optional as it can be optional and mandatory on “one” side since card type can belong only to one credit account. The Credit Account is belonging to one have one or more card type, hence class/subclass relationship for the card types has been created which carries the similar attributes of the superclass Credit account and have unique attributes mentioned in the individual sub-classes. A credit account can have one or more type of credit card type hence “overlapping” constraint has been used. Since, it is given that credit account can have one or more card types, it is partial participation as given in EERD. 
+**2. Enhanced ER relationship**
+For the business rule, “All card types share common attributes (card type, customer ID, credit limit, and annual fee) but some card type has unique attributes (for instance, minimum pay for Regular, annual cashback for Premium and travel details for Travel card)” follows the concept of “Generalization”. The relationship between Credit Account and the Card Type is 1: M. The Credit Account is belonging to one have one or more card type, hence class/subclass relationship for the card types has been created.
 
 ## Building Database using SQL
 
 The above EER diagram can be used to implement in the database system. This can be done by writing SQL queries. You can use Live Oracle SQL or My SQL Workbench, both are open source. I have used Live Oracle platform. 
 
-Before we start, think of how the data hierarchy. The given figure is a pictorial representation takem from Oracle site that represents the data storage. This doesn't hold true for everything. The point is the database can have different tables that are related to each other by some keys. When we want to write a query, we need to think of hierarchy. For this project, we will assume that the these tables are stored under the database 'Credit Department' and we will write a SQL query accordingly.
+Before we start, think of how the data hierarchy are followed while designing the database and tables. The given figure is a pictorial representation taken from Oracle site that represents the data storage. This doesn't hold true for everything. For this project, we will assume that the these tables are stored under the database 'Credit Department' and we will write a SQL query accordingly.
 
 <p align="center">
   <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/hierarchy.png" width="600" height="200" />
