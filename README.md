@@ -26,8 +26,7 @@ In this capacity, you serve as the designated Database Administrator. "XYZ Finte
 
 ## Business Understanding
 
-- Financial transactions are the lifeblood of fintech companies. Whether it's processing payments, executing trades, or managing loans, these actions need to be executed with the utmost precision. RDBMS are the guardians of these transactions, armed with the power of ACID compliance (Atomicity, Consistency, Isolation, Durability). They ensure that a financial transaction, once initiated, is completed successfully and reliably, and that the data remains consistent throughout the process.
-- In a world where every dollar counts, RDBMS provides the rock-solid foundation upon which fintech companies build their operations, making sure your financial actions are executed without a glitch.
+- Financial transactions are the lifeblood of fintech companies. Whether it's processing payments, executing trades, or managing loans, these actions need to be executed with the utmost precision. RDBMS are the guardians of these transactions. They ensure that a financial transaction, once initiated, is completed successfully and reliably, and that the data remains consistent throughout the process.
 
 <p align="center">
   <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/rdbms_image.jpg" width="500" height="300" />
@@ -35,7 +34,7 @@ In this capacity, you serve as the designated Database Administrator. "XYZ Finte
 
 ## Methodology
 
-As a Database Administrator, your role is develop an efficient and scalable database that will help company achieve their goal in terms of managing data. In order to do that first you need to start understanding what the company does, what are they looking for, what services they offer, what data they have, what are the types of data, how they are collecting it, what systems they have, what is their end goal in terms of data output and so on. Some of the questions are given in the **Business Questions** section. You can follow the following steps:
+As a Database Administrator, your role is to develop an efficient and scalable database that will help company achieve their goal in terms of managing data. In order to do that first you need to start understanding what the company does, what are they looking for, what services they offer, what data they have, what are the types of data, how they are collecting it, what systems they have, what is their end goal in terms of data output and so on. Some of the questions are given in the **Business Questions** section. You can follow the following steps:
 
 - **Understand the Company**: As a Database Administrator, your first step is to understand the company's operations. This involves learning about the company's services, data types, data collection methods, existing systems, and its data-related goals.
 
@@ -61,9 +60,7 @@ We will frame business questions for our client XYZ Fintech. Some of the interes
 
 Business Rules represents the different entities in business and define relationships between them. The ER diagram represents the pictorial representation between these entities. Defining business rules properly helps us to built the database in an organized and hence it is important to focus on every details on how company works.
 
-For this project, we will consider a very simple example of Credit Card transaction in XYZ Fintech company. This will a very basic business rules for XYZ Fintech but note that they are more complex in real word situation. However, I'm hopeful that this will be a basic understanding of how business rules are made and used in ER diagram.
-
-Assume we have collected enough data from the questions and our research on the Credit Trasaction department of XYZ Fintech. We found that the company has different entities and relationships and hence we developed the business rules for the company.
+For this project, we will consider a very simple example of Credit Card transaction in XYZ Fintech company. Thease are basic business rules for XYZ Fintech but note that they are more complex in real word situation. Through our research, we found that the company has different entities related to transactions and hence we formulated the business rules for the company.
 
 **Business rules**
 
@@ -80,7 +77,7 @@ After defining the business rules, you may notice that there exists different re
 
 ## Entity Relationship Diagram
 
-The provided business rules offer insights into the company's operations and provide an understanding of data recording processes. Notably, they reveal various relationships between entities, like the multiple transactions associated with each credit account. This implies a one-to-many relationship between "Credit Account" and "Transaction," forming the basis for an Entity-Relationship (ER) diagram. These relationships are nuanced, with the use of verbs and pronouns carrying specific meanings. To illustrate these concepts, we'll create an ER diagram. For example, considering the rules, we envision a "Customer" table with attributes like customer name, card details, and demographics, necessitating a unique "Customer ID." This approach helps us conceptualize how data might be structured in tables to represent the business processes effectively. The Entities and its attributes is illustrated below:
+The provided business rules offer insights into the company's operations and provide an understanding of data recording processes. Notably, they reveal various relationships between entities, for instance, the multiple transactions associated with each credit account. This implies a one-to-many relationship between "Credit Account" and "Transaction," forming the basis for an Entity-Relationship (ER) diagram. These relationships are nuanced, with the use of verbs and pronouns carrying specific meanings. To illustrate these concepts, we'll create an ER diagram. For example, considering the rules, we envision a "Customer" table with attributes like customer name, card details, and demographics, necessitating a unique "Customer ID." This approach helps us conceptualize how data might be structured in tables to represent the business processes effectively. The Entities and its attributes is illustrated below:
 
 <p align="center">
   <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/tables_attributes.png" width="600" height="200" />
