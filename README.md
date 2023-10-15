@@ -167,7 +167,7 @@ CREATE TABLE CUSTOMER
       CUST PHONE VARCHAR (15),
       CUST LOCATION VARCHAR (30),
       CUST SSN NUMBER (15),
-      CONSTRAINT CUST_ID_PK PRIIMARY KEY (CUST_ID)
+      CONSTRAINT CUST_ID_PK PRIMARY KEY (CUST_ID)
      );
 
 -- Checking the table
@@ -176,7 +176,7 @@ DESC CUSTOMER;
 
 ```
 <p align="center">
-  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/cust_table.png" width="600" height="200" />
+  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/cust_table.png" width="400" height="300" />
 </p>
 
 
@@ -197,7 +197,7 @@ DESC AGENT_CUSTOMER;
 
 ```
 <p align="center">
-  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/agent_table.png" width="600" height="200" />
+  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/agent_table.png" width="400" height="300" />
 </p>
 
 
@@ -224,7 +224,7 @@ DESC AGENT_RECORD;
 ```
 
 <p align="center">
-  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Insert_agent.png" width="600" height="200" />
+  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Insert_agent.png" width="400" height="300" />
 </p>
 
 
@@ -247,7 +247,7 @@ SELECT* FROM CARD_TYPE;
 
 ```
 <p align="center">
-  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/card_insert.png" width="600" height="200" />
+  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/card_insert.png" width="400" height="300" />
 </p>
 
 
@@ -280,7 +280,7 @@ AND
 
 ```
 <p align="center">
-  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Query1.png" width="600" height="200" />
+  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Query1.png" width="400" height="300" />
 </p>
 
 
@@ -312,7 +312,7 @@ WHERE
     
 ```
 <p align="center">
-  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Query2.png" width="600" height="200" />
+  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Query2.png" width="400" height="300" />
 </p>
 
 
@@ -341,7 +341,7 @@ WHERE
 
 ```
 <p align="center">
-  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Query3.png" width="600" height="200" />
+  <img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/Query3.png" width="400" height="300" />
 </p>
 
 
