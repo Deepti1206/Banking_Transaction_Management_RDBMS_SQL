@@ -250,7 +250,7 @@ In this way, we can create database, tables, insert values and specify constrain
 
 After you have done creating tables and insertying all the data. It's time to test it. We will frame some questions which we feel that might be encountered with the end users for business requirment. We will write a query and see how it works.
 
-**1. Business Query 1: As a business analyst, I want to look at the remaining balance of the customers who had made their purchases from the vendor named 'ALDI'.
+**1. Business Query 1: As a business analyst, I want to look at the remaining balance of the customers who had made their purchases from the vendor named 'ALDI'.**
 
 ```sql
 
@@ -277,7 +277,7 @@ AND
 </p>
 
 
-**2. Business Query 2: As a data analyst, I want to look at the details of the customers whp purchased from "ALDI" and "Walmart" on the 8th of April. Calculates their monthly fee, round up to 2 decimal points.
+**2. Business Query 2: As a data analyst, I want to look at the details of the customers whp purchased from "ALDI" and "Walmart" on the 8th of April. Calculates their monthly fee, round up to 2 decimal points.**
 
 ```sql
 
@@ -309,7 +309,7 @@ WHERE
 </p>
 
 
-**Business Query 3: As a data engineer, I want to calculate the average transaction amount of each vendor at different locations.
+**Business Query 3: As a data engineer, I want to calculate the average transaction amount of each vendor at different locations.**
 
 ```sql
 
@@ -338,7 +338,7 @@ WHERE
 </p>
 
 
-**Business Query 4: As an analyst, I want to calculate the average monthly transaction per customer in the year of 2023.
+**Business Query 4: As an analyst, I want to calculate the average monthly transaction per customer in the year of 2023.**
 
 ```sql
 
