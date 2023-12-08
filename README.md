@@ -1,5 +1,7 @@
 # Banking_Transaction_Management_RDBMS_SQL
 
+<img src="https://github.com/Deepti1206/Banking_Transaction_Management_RDBMS_SQL/blob/main/Images/rdbms.jpg" width="600" height="300">
+
 ## Table of Contents
 - [Project Objective](#project-objective)
 - [Problem Statement](#problem-statement)
